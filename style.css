@@ -1,0 +1,309 @@
+/* Home screan */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6),rgba(4, 9, 30, 0.6)), url(images/i2.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* Navigational tabs (HOME< SERVICES< CONTACT) */
+nav{
+    display: flex;
+    padding: 0% 0% ;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img{
+    width: 240px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+/* Underline Navigational tabs*/
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2ac7f5;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+/*About Us text box*/
+.text-box{
+    width: 90%;
+    color: #2ac7f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+/*About us button*/
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #2ac7f5;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #2ac7f5;
+    background: #fff;
+    transition: 0.75s;
+}
+/*to hide smartphone Navigational Tab (show and hide)icons*/
+nav .fa{
+    display: none;
+}
+/*adjustments for smartphone*/
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 0px;
+    }
+    .text-box p{
+        font-size: 15px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #2ac7f5;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.85s;
+
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+
+}
+/*-------------Services------------*/
+.services{/*heading*/
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/*--------------Banners------------*/
+
+.services-banner{
+     margin: 100px;
+     width: 85%;
+     background:transparent;
+     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/i12.jpeg);
+     background-position: center;
+     background-size: cover;
+     border-radius: 10px;
+     text-align: center;
+     padding: 100px 0;
+     transition:0.7s;
+}
+.services-banner:hover{
+    background: rgba(42,199,245,1);
+}
+
+@media(max-width: 700px){
+    .services-banner{
+        flex-direction: column;
+        font-size: 20px;
+        width: 85%;
+        margin: 30px;
+
+    }
+    .row{
+        flex-direction: column;/*makes a smaller and fitting smartphone banner*/
+    }
+}/*banner size still needs fixing on smartphone*/
+/*--------------Services-----------*/
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    color: #2ac7f5;
+    text-align: center;
+}
+.service-col{
+    flex-basis: 31%;
+    background: #2c161c;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: 0.5s;
+}
+.service-col:hover{
+    background: rgba(10,0,0,0);
+}
+.service-col img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.services h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.services p{
+    color: #2ac7f5;
+    font-size: 14xp;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+
+}
+/*Change it; make banner like sections per service with an image */
+
+/*----------------Rentals----------------*/
+.rentals{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.rentals-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.rentals-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.rentals-col p{
+    padding: 0;
+}
+.rentals-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.rentals-col ul li{
+    list-style: none;
+    display: flex;
+    padding: 1px 90px;
+    position: left;
+}
+/*----------------Contact--------------*/
+.contact{
+    min-height: 110vh;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6),rgba(4, 9, 30, 0.6)), url(images/i3.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+}
+.contact h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+.contact p{
+    color: #fff;
+    font-size: 14xp;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 40px;
+    text-align: center
+}
+.contact-info li{
+    text-align: center;
+    padding: 5px 90px;
+}
+.contact-info li .fa{
+    color: #2ac7f5;
+    margin-right: 7px;
+}
+@media(max-width: 700px){
+    .contact{
+        flex-direction: column;
+        font-size: 20px;
+        width: 85%;
+        margin: 5px;
+        flex-direction: column;
+        background-position: center;
+    }
+    .contact p{
+        font-size: 15px;
+    }
+    .contact-info ul li{
+        font-size: 20px;
+        position: center;
+        display: block;
+        padding: 0px;
+    }
+}
+/*---------------Footer----------------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer p{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.footer p .fa{
+      color: #2ac7f5;
+     }
