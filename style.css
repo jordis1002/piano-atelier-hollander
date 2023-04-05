@@ -132,40 +132,13 @@ nav .fa{
     text-align: center;
     padding-top: 100px;
 }
-
-/*--------------Banners------------*/
-
-.services-banner{
-     margin: 100px;
-     width: 85%;
-     background:transparent;
-     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/i12.jpeg);
-     background-position: center;
-     background-size: cover;
-     border-radius: 10px;
-     text-align: center;
-     padding: 100px 0;
-     transition:0.7s;
-}
-.services-banner:hover{
-    background: rgba(42,199,245,1);
-}
-
-@media(max-width: 700px){
-    .services-banner{
-        flex-direction: column;
-        font-size: 20px;
-        width: 85%;
-        margin: 30px;
-
-    }
-    .row{
-        flex-direction: column;/*makes a smaller and fitting smartphone banner*/
-    }
-}/*banner size still needs fixing on smartphone*/
-/*--------------Services-----------*/
 .row{
+    margin: 80px;
+    width: 85%;
     margin-top: 5%;
+    background-size: cover;
+    border-radius: 10px;
+
     display: flex;
     justify-content: space-between;
     color: #2ac7f5;
@@ -208,6 +181,18 @@ h3{
     text-align: center;
 
 }
+@media(max-width: 700px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        width: 85%;
+        margin: 30px;
+        padding: 20xp 12xp;
+
+    }
+}/*banner size still needs fixing on smartphone*/
+
 /*Change it; make banner like sections per service with an image */
 
 /*----------------Rentals----------------*/
@@ -216,6 +201,27 @@ h3{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+}
+.rentals h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+.rentals p{
+    color:#2ac7f5;
+    font-size: 14xp;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+.rentals h2{
+    text-align: center;
+    color:#6f0420;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-weight: 800;
+
 }
 .rentals-col{
     flex-basis: 31%;
@@ -238,7 +244,7 @@ h3{
 .rentals-col ul li{
     list-style: none;
     display: flex;
-    padding: 1px 90px;
+    padding: 1px 9px;
     position: left;
 }
 /*----------------Contact--------------*/
