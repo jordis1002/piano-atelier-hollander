@@ -68,6 +68,7 @@ nav{
     margin: 10px 0 40px;
     font-size: 14px;
     color: #fff;
+    text-decoration-line: none;
 }
 /*About us button*/
 .hero-btn{
